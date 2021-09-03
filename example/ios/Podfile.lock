@@ -1,0 +1,29 @@
+PODS:
+  - Flutter (1.0.0)
+  - fxendit (0.0.1):
+    - Flutter
+    - Xendit (>= 3.4)
+  - Xendit (3.4.0)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - fxendit (from `.symlinks/plugins/fxendit/ios`)
+
+SPEC REPOS:
+  trunk:
+    - Xendit
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  fxendit:
+    :path: ".symlinks/plugins/fxendit/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
+  fxendit: 972054d672107fc64f03009ebfe31d5e08a34117
+  Xendit: a400bbbd857e1c79cfa24c9aaede91d346df241c
+
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+
+COCOAPODS: 1.10.1

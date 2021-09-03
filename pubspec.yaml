@@ -24,3 +24,5 @@ flutter:
       android:
         package: com.xendit.fxendit
         pluginClass: FxenditPlugin
+      ios:
+        pluginClass: FxenditPlugin

@@ -13,7 +13,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   // Use your own key from https://dashboard.xendit.co/settings/developers#api-keys
   Xendit xendit = Xendit(
-      'xnd_public_development_RGUHB7gkrX2QTfeWMMCZhoUMAoVBmEadosxVOGfCCIX92kdCacGBoDlrjldsm7');
+      'xnd_public_development_irfBbAtx5KmySSJ4Ybvy8MCqArzkJMJyepzJBMQzTLYdMO7IkB6SYNhawpnd2A');
   String tokenId = '';
 
   @override
@@ -37,7 +37,7 @@ class _MyAppState extends State<MyApp> {
     TokenResult result = await xendit.createSingleUseToken(
       card,
       amount: 75000,
-      shouldAuthenticate: true,
+      shouldAuthenticate: false,
       onBehalfOf: '',
     );
 
