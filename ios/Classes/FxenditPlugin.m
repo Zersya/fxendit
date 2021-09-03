@@ -83,7 +83,7 @@
             [NSException raise:NSGenericException format:@"%@", error.message];
         }
         
-        NSDictionary *dict = @{
+        NSDictionary* dict = @{
                     @"id": token.tokenID,
                     @"status": token.status,
                     @"authenticationId": token.authenticationId,
@@ -93,9 +93,10 @@
                             @"bank": token.cardInfo.bank,
                             @"country": token.cardInfo.country,
                             @"type": token.cardInfo.type,
-                            @"brand": token.cardInfo.brand,
-//                            @"cardArtUrl": token.cardInfo.cardArtUrl,
-                            @"fingerprint": token.cardInfo.fingerprint,
+                            @"brand": token.cardInfo.brand ?
+                                token.cardInfo.brand: [NSNull null],
+                            @"cardArtUrl": token.cardInfo.cardArtUrl ? token.cardInfo.cardArtUrl: [NSNull null],
+                            @"fingerprint": token.cardInfo.fingerprint ?  token.cardInfo.fingerprint:[NSNull null],
                     }
         };
         
